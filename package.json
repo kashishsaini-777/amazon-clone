@@ -1,17 +1,21 @@
 {
   "name": "amazon_clone",
   "version": "1.0.0",
-  "description": "This is a collaborative Amazon Clone project led by Zema Coders to help junior developers gain real-world experience. The project follows industry best practices, allowing developers to work in teams, understand Git workflows, and build a scalable e-commerce platform using the MERN + MySQL stack.",
+  "description": "This is an Amazon Clone.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "backend": "node BackEnd/index.js",
+  "frontend": "npm run dev --prefix FrontEnd",
+  "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+},
   "repository": {
     "type": "git",
-    "url": "git@github.com-work:Zemacoders/Amazon_Clone.git"
+    "url": "https://github.com/kashishsaini-777/amazon-clone.git"
   },
   "keywords": [],
-  "author": "Teklu",
+  "author": "Kashish",
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
